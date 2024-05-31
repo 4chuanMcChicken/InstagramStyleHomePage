@@ -1,0 +1,71 @@
+.loop(@counter) when (@counter >= 0) {
+    .p-@{counter} {
+      padding: (2px * @counter) !important;
+    }
+    .px-@{counter} {
+      padding-left: (2px * @counter) !important;
+      padding-right: (2px * @counter) !important;
+    }
+    .py-@{counter} {
+      padding-top: (2px * @counter) !important;
+      padding-bottom: (2px * @counter) !important;
+    }
+    .pt-@{counter} {
+      padding-top: (2px * @counter) !important;
+    }
+    .pr-@{counter} {
+      padding-right: (2px * @counter) !important;
+    }
+    .pb-@{counter} {
+      padding-bottom: (2px * @counter) !important;
+    }
+    .pl-@{counter} {
+      padding-left: (2px * @counter) !important;
+    }
+  
+    /**margin*/
+    .m-@{counter} {
+      margin: (2px * @counter) !important;
+    }
+    .mx-@{counter} {
+      margin-left: (2px * @counter) !important;
+      margin-right: (2px * @counter) !important;
+    }
+    .my-@{counter} {
+      margin-top: (2px * @counter) !important;
+      margin-bottom: (2px * @counter) !important;
+    }
+    .mt-@{counter} {
+      margin-top: (2px * @counter) !important;
+    }
+    .mr-@{counter} {
+      margin-right: (2px * @counter) !important;
+    }
+    .mb-@{counter} {
+      margin-bottom: (2px * @counter) !important;
+    }
+    .ml-@{counter} {
+      margin-left: (2px * @counter) !important;
+    }
+  
+    .w-@{counter} {
+      width: (2px * @counter) !important;
+      min-width: (2px * @counter) !important;
+    }
+    .h-@{counter} {
+      height: (2px * @counter) !important;
+      min-height: (2px * @counter) !important;
+    }
+    .br-@{counter} {
+      border-radius: (2px * @counter) !important;
+    }
+    .fs-@{counter} {
+      font-size: (1px * @counter) !important;
+    }
+    .lh-@{counter} {
+      line-height: (1px * @counter) !important;
+    }
+    .loop((@counter - 1));
+  }
+  .loop(200);
+  

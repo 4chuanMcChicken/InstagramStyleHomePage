@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  frontend-prod:
+    restart: always
+    image: "yizhouli/portfolio-frontend:v1.0.12"
+    ports:
+      - "8083:80"
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf
+      - ./config/conf.d:/etc/nginx/conf.d
+      - ./ssl/yizhou.me.crt:/etc/ssl/certs/yizhou.me.crt
+      - ./ssl/yizhou.me.key:/etc/ssl/certs/yizhou.me.key
+    environment:
+      - NODE_ENV=prod
