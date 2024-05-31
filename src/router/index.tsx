@@ -11,6 +11,10 @@ const rootRouter = [
         path: "/",
         element: <Home />,
       },
+      {
+        path: "/palmstreet",
+        element: <Home />,
+      },
     ],
   },
 ];
