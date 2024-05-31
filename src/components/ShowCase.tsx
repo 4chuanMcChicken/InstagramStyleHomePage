@@ -9,7 +9,7 @@ const ShowCase = React.forwardRef<HTMLDivElement, SingleShowCase>(
       <div className="showcase" ref={ref}>
         <img className="image" src={url} alt="Showcase" />
         <div className="hover-content">
-          <div className="icon-text" style={{ marginRight: "32px" }}>
+          <div className="icon-text">
             <HeartFilled style={{ fontSize: "20px" }} />
             <span>{likeCount}</span>
           </div>
