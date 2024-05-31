@@ -10,7 +10,7 @@ interface ShowCaseType {
 }
 
 const Home: React.FC = () => {
-  const [totalPost, setTotalPost] = useState("10, 690, 930");
+  const [totalPost] = useState("10, 690, 930");
   const [showCases, setShowCases] = useState<ShowCaseType[]>([]);
   const [skip, setSkip] = useState(0);
   const limit = 9; // 每次加载的数量

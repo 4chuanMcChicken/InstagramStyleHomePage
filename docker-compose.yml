@@ -2,7 +2,7 @@ version: '3.8'
 services:
   frontend-prod:
     restart: always
-    image: "yizhouli/portfolio-frontend:v1.0.12"
+    image: "yizhouli/palmstreet:latest"
     ports:
       - "8083:80"
     volumes:
